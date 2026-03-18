@@ -1,5 +1,12 @@
 /*
+!.gitignore
+!wp-content/
+wp-content/*
 !wp-content/themes/
 !wp-content/plugins/
+!wp-content/themes/**
+!wp-content/plugins/**
 wp-content/uploads/
-!.gitignore
+wp-content/upgrade/
+wp-content/languages/
+wp-content/cache/

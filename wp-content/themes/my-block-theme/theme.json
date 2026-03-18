@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "1065px",
+			"wideSize": "1440px"
+		},
+		"spacing": {
+			"units": ["%", "px", "em", "rem", "vh", "vw"],
+			"blockGap": true
+		},
+		"color": {
+			"palette": [
+				{ "name": "Текст", "slug": "text", "color": "#272d38" },
+				{ "name": "Фон", "slug": "background", "color": "#8eadd5" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{"fontFamily": "Inter, sans-serif", "slug": "inter", "name": "Inter"}
+			],
+			"fontSizes": [
+				{ "slug": "s", "size": "0.875rem", "name": "Small" },
+				{ "slug": "m", "size": "1rem", "name": "Medium" },
+				{ "slug": "l", "size": "1.25rem", "name": "Large" },
+				{ "slug": "xl", "size": "1.75rem", "name": "Extra Large" }
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"fontSize": "var(--wp--preset--font-size--m)"
+		},
+		"blocks": {
+			"core/group": {
+				"css": ".wp-block-group.test { max-width: 1440px;margin: 0 auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: url('/wp-content/themes/my-block-theme-1/assets/images/bg-desktop.svg') center / cover no-repeat}"
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}
